@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Список дел</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/yegor256/tacit@gh-pages/tacit-css.min.css"/>
+</head>
+<body>
+    <h1>Списки дел на {{day_name}}</h1>
+
+    <ul>
+        {% for task in todo_list %}
+            <li>{{ task }}</li>
+        {% endfor %}
+    </ul>
+
+</body>
+</html>
